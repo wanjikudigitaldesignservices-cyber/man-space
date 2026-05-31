@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MAN-SPACE | Premium Men's Grooming Lounge & Barbershop</title>
+    <meta name="description" content="MAN-SPACE is Nairobi's premier men's grooming lounge. Experience classic barbering, beard styling, and executive grooming in a masculine, refined environment.">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar"><div class="nav-container">
+        <a href="#home" class="nav-logo">MAN<span class="accent">-</span>SPACE</a>
+        <ul class="nav-links" id="navLinks"><li><a href="#home" class="nav-link active">Home</a></li><li><a href="#services" class="nav-link">Services</a></li><li><a href="#membership" class="nav-link">Membership</a></li><li><a href="#booking" class="nav-link">Book</a></li></ul>
+        <a href="#booking" class="nav-cta">Book an Appointment</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div></nav>
+
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Est. 2024 • Nairobi</span>
+            <h1>More Than A<br>Barbershop. <span class="accent">A Retreat.</span></h1>
+            <p class="hero-sub">Where classic barbering meets modern luxury. Step into MAN-SPACE for the ultimate executive grooming experience.</p>
+            <div class="hero-actions">
+                <a href="#booking" class="btn btn-primary">Book Your Chair</a>
+                <a href="#services" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="b-grid">
+                <div class="b-item"><h3>Whiskey Bar</h3><p>Complimentary single malt with every executive cut.</p></div>
+                <div class="b-item"><h3>Hot Towel</h3><p>Traditional hot towel shaves for the perfect finish.</p></div>
+                <div class="b-item"><h3>Cigar Lounge</h3><p>Exclusive access for our platinum members.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header"><span class="tag">Grooming</span><h2>Our Services</h2><p>Tailored treatments for the modern gentleman.</p></div>
+            <div class="services-grid">
+                <div class="svc-card">
+                    <div class="svc-icon">✂️</div>
+                    <div class="svc-content">
+                        <h3>Executive Haircut</h3>
+                        <p>Precision cut, wash, scalp massage, and styling using premium pomades.</p>
+                        <div class="svc-price">Kes 1,500 <button class="btn-text" onclick="bookSvc('Executive Haircut')">Book →</button></div>
+                    </div>
+                </div>
+                <div class="svc-card featured">
+                    <div class="svc-icon">💈</div>
+                    <div class="svc-content">
+                        <h3>The MAN-SPACE Signature</h3>
+                        <p>Executive haircut, traditional hot towel straight-razor shave, and facial treatment.</p>
+                        <div class="svc-price">Kes 3,000 <button class="btn-text" onclick="bookSvc('The Signature')">Book →</button></div>
+                    </div>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">🧔</div>
+                    <div class="svc-content">
+                        <h3>Beard Sculpting</h3>
+                        <p>Trim, shape, line-up, and beard oil application for a sharp, conditioned look.</p>
+                        <div class="svc-price">Kes 1,000 <button class="btn-text" onclick="bookSvc('Beard Sculpting')">Book →</button></div>
+                    </div>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">🧼</div>
+                    <div class="svc-content">
+                        <h3>Gentleman's Facial</h3>
+                        <p>Deep cleanse, exfoliation, blackhead extraction, and moisturizing mask.</p>
+                        <div class="svc-price">Kes 2,500 <button class="btn-text" onclick="bookSvc('Gentlemans Facial')">Book →</button></div>
+                    </div>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">🦶</div>
+                    <div class="svc-content">
+                        <h3>Executive Pedicure</h3>
+                        <p>Soak, scrub, nail care, and foot massage in our private leather recliners.</p>
+                        <div class="svc-price">Kes 2,000 <button class="btn-text" onclick="bookSvc('Executive Pedicure')">Book →</button></div>
+                    </div>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">💆‍♂️</div>
+                    <div class="svc-content">
+                        <h3>Sports Massage</h3>
+                        <p>Deep tissue massage to relieve muscle tension after a long week or heavy workout.</p>
+                        <div class="svc-price">Kes 4,500 <button class="btn-text" onclick="bookSvc('Sports Massage')">Book →</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership" class="section split-section">
+        <div class="container"><div class="split-grid">
+            <div class="split-img">Lounge Area</div>
+            <div class="split-content">
+                <span class="tag">The Club</span>
+                <h2>MAN-SPACE Membership</h2>
+                <p>Join the inner circle. A MAN-SPACE membership grants you priority bookings, complimentary beverages, and exclusive access to the lounge.</p>
+                <ul class="check-list">
+                    <li>✓ Unlimited haircuts & beard trims</li>
+                    <li>✓ Complimentary top-shelf whiskey or craft beer</li>
+                    <li>✓ 1 monthly facial or massage</li>
+                    <li>✓ Cigar lounge access</li>
+                </ul>
+                <a href="#booking" class="btn btn-outline" onclick="bookSvc('Membership Inquiry')">Inquire About Membership</a>
+            </div>
+        </div></div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+        <div class="container">
+            <div class="section-header"><h2>Secure Your Time</h2><p>Walk-ins are welcome, but appointments are highly recommended to avoid wait times.</p></div>
+            <div class="booking-wrap">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row"><div class="form-group"><label>Name</label><input type="text" name="name" required></div><div class="form-group"><label>Phone</label><input type="tel" name="phone" required></div></div>
+                    <div class="form-row"><div class="form-group"><label>Service</label><select name="service" id="svcSelect" required><option value="">Select Service</option><option>Executive Haircut</option><option>The Signature</option><option>Beard Sculpting</option><option>Gentlemans Facial</option><option>Executive Pedicure</option><option>Sports Massage</option><option>Membership Inquiry</option></select></div><div class="form-group"><label>Preferred Barber (Optional)</label><select name="barber"><option value="Any">Anyone Available</option><option value="Mike">Mike (Master Barber)</option><option value="John">John (Fade Specialist)</option></select></div></div>
+                    <div class="form-row"><div class="form-group"><label>Date</label><input type="date" name="date" required></div><div class="form-group"><label>Time</label><input type="time" name="time" required></div></div>
+                    <button type="submit" class="btn btn-primary btn-full">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="f-grid">
+                <div class="f-info"><h3>MAN-SPACE</h3><p>Premium Men's Grooming Lounge</p><p class="mt-4">📍 Riverside Drive, Nairobi</p><p>📞 +254 711 000000</p></div>
+                <div class="f-hours"><h4>Hours</h4><p>Mon-Fri: 8AM - 8PM</p><p>Sat: 9AM - 6PM</p><p>Sun: Closed</p></div>
+            </div>
+            <div class="f-bottom"><p>© 2024 MAN-SPACE. <a href="admin.html">Admin</a></p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body></html>
